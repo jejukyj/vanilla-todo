@@ -9,19 +9,32 @@
 
   <body>
     <div class="container">
-      <h2>투두리스트</h2>
-      <form action="">
-        <input type="text" placeholder="할 일을 입력하세요" />
-        <button>+</button>
-      </form>
-      <hr />
+      <span class="title">To Do List</span>
+      <!-- <form action=""> -->
+      <input
+        type="text"
+        id="todoInput"
+        placeholder="할 일을 입력하세요"
+        onkeydown="EnterKeyDown()"
+      />
+      <button id="addBtn">+</button>
+      <!-- </form> -->
+      <div class="division-line"></div>
 
-      <h4>TO DO</h4>
-      <div class="todo-d"></div>
-      <hr />
+      <div class="todo-box">
+        <span class="list-title">📝 TO DO ()</span>
+        <div class="todo-d">
+          <ul id="todoList"></ul>
+        </div>
+      </div>
+      <div class="division-line"></div>
 
-      <h4>DONE</h4>
-      <div class="done-d"></div>
+      <div class="done-box">
+        <span class="list-title">✔️ DONE ()</span>
+        <div class="done-d">
+          <ul id="doneList"></ul>
+        </div>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
