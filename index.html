@@ -9,32 +9,35 @@
 
   <body>
     <div class="container">
-      <span class="title">To Do List</span>
-      <!-- <form action=""> -->
-      <input
-        type="text"
-        id="todoInput"
-        placeholder="할 일을 입력하세요"
-        onkeydown="EnterKeyDown()"
-      />
-      <button id="addBtn">+</button>
-      <!-- </form> -->
+      <section>
+        <span class="title">To Do List</span>
+        <!-- <form action=""> -->
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="할 일을 입력하세요"
+          onkeydown="EnterKeyDown()"
+        />
+        <button id="add-button">+</button>
+      </section>
+
       <div class="division-line"></div>
 
-      <div class="todo-box">
-        <span class="list-title">📝 TO DO ()</span>
-        <div class="todo-d">
-          <ul id="todoList"></ul>
+      <section class="todo-box">
+        <span class="todo-list-title">📝 TO DO (0)</span>
+        <div class="todo-div">
+          <ul id="todo-list"></ul>
         </div>
-      </div>
+      </section>
+
       <div class="division-line"></div>
 
-      <div class="done-box">
-        <span class="list-title">✔️ DONE ()</span>
-        <div class="done-d">
-          <ul id="doneList"></ul>
+      <section class="done-box">
+        <span class="done-list-title">✔️ DONE (0)</span>
+        <div class="done-div">
+          <ul id="done-list"></ul>
         </div>
-      </div>
+      </section>
     </div>
   </body>
   <script src="script.js"></script>
