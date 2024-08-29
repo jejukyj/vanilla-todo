@@ -11,14 +11,10 @@
     <div class="container">
       <section>
         <span class="title">To Do List</span>
-        <!-- <form action=""> -->
-        <input
-          type="text"
-          id="todo-input"
-          placeholder="할 일을 입력하세요"
-          onkeydown="EnterKeyDown()"
-        />
-        <button id="add-button">+</button>
+        <form onsubmit="return false">
+          <input type="text" id="todo-input" placeholder="할 일을 입력하세요" />
+          <button id="add-button">+</button>
+        </form>
       </section>
 
       <div class="division-line"></div>
